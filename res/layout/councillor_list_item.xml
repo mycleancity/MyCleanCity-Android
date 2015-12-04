@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/container_dropshadow"
+    android:minHeight="150dp" >
+
+    <RelativeLayout
+        android:id="@+id/feedHeaderView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background_green"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/councillorLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:scrollHorizontally="false"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/feedBodyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedHeaderView"
+        android:background="@android:color/white"
+        android:minHeight="110dp"
+        android:padding="8dp" >
+
+        <com.sbs.android.cleanmycity.component.AppImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/councillorImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/councillorNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/councillorImage"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:text="Councillor Name"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/councillorNameValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/councillorNameLabel"
+            android:layout_toRightOf="@+id/councillorImage"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@color/app_background_green"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+        
+        <TextView
+            android:id="@+id/councillorEmailLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/councillorNameValue"
+            android:layout_toRightOf="@+id/councillorImage"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:text="Councillor Email"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/councillorEmailValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/councillorEmailLabel"
+            android:layout_toRightOf="@+id/councillorImage"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@color/app_background_green"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

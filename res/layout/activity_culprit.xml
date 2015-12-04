@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@drawable/container_dropshadow">
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true">
+    
+         <RelativeLayout 
+	android:id="@+id/feedHeaderView"
+    android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@color/app_background_green"
+    
+    >
+    
+    
+    <TextView
+        android:id="@+id/introLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        
+        android:ellipsize="none"
+        android:gravity="center"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Submit Culprit Form"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    </RelativeLayout>
+        
+     <EditText
+	        android:id="@+id/nameEditText"
+	        android:drawableLeft="@drawable/full_name"
+	        android:drawablePadding="5dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_below="@+id/feedHeaderView"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	        android:singleLine="true"
+	  		android:textSize="15sp"
+	  		android:textColor="@color/app_green"
+	  		android:textColorHint="@color/gray"
+	  		android:inputType="textCapWords"
+	        android:hint="Full Name" >
+	   		</EditText>
+	   		
+     <CheckBox
+        android:id="@+id/publishNameCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEditText"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	  		android:textColor="@color/app_green"
+        android:text="Allow name to be published" />
+	   		
+    	<EditText
+	        android:id="@+id/emailEditText"
+	        android:drawableLeft="@drawable/email"
+	        android:drawablePadding="5dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_below="@+id/publishNameCheckBox"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	        android:singleLine="true"
+	  		android:textSize="15sp"
+	  		android:textColor="@color/app_green"
+	  		android:textColorHint="@color/gray"
+	  		android:inputType="textEmailAddress"
+	        android:hint="Email Address" >
+	   		</EditText>
+	   		
+            
+        	<EditText
+	        android:id="@+id/mobileEditText"
+	        android:drawableLeft="@drawable/mobile"
+	        android:drawablePadding="5dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_below="@+id/emailEditText"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	        android:singleLine="true"
+	  		android:textSize="15sp"
+	  		android:textColor="@color/app_green"
+	  		android:textColorHint="@color/gray"
+	  		android:inputType="phone"
+	        android:hint="Mobile Number" >
+	   		</EditText>
+	   		
+        	
+        	<TextView
+        android:id="@+id/culpritPhotoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobileEditText"
+        android:layout_marginTop="35dp"
+	   	android:layout_marginRight="30dp"
+	  	 android:layout_marginLeft="35dp"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:text="Take Photo or Choose from Gallery"
+        android:textColor="@color/app_green"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+        	
+        	<ImageView android:id="@+id/culpritPhotoImage" 
+        	    android:layout_width="80dp" 
+        	    android:layout_height="80dp" 
+        	    android:layout_below="@+id/culpritPhotoLabel"
+        	    android:src="@drawable/ic_action_camera"
+        	    android:scaleType="fitCenter"
+        	    android:layout_marginTop="5dp"
+        	    android:layout_marginRight="30dp"
+	  	 android:layout_marginLeft="35dp"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/black"
+        	            	 />
+        	
+        
+        	
+        	<TextView
+        android:id="@+id/culpritCategoryTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/culpritPhotoImage"
+        android:layout_marginTop="20dp"
+	   	android:layout_marginRight="30dp"
+	  	 android:layout_marginLeft="35dp"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:text="Category"
+        android:textColor="@color/app_green"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+        	
+        	
+        	<Spinner
+        	         android:id="@+id/culpritCategorySpinner"
+        	         android:layout_width="match_parent"
+        	         android:layout_height="wrap_content"
+        	         android:layout_marginTop="5dp"
+        	         android:layout_marginRight="30dp"
+	  	 				android:layout_marginLeft="30dp"
+	  	 				android:layout_below="@+id/culpritCategoryTitleLabel"
+        	         android:entries="@array/culprit_category_arrays"
+        	         android:prompt="@string/prompt_culprit"
+        	         android:textColor="@color/app_green"
+        	         android:textColorHint="@color/gray"
+        	          android:spinnerMode="dialog"
+        	         android:textSize="15sp" />
+        	
+        	
+        	<TextView
+        android:id="@+id/culpritRepeatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/culpritCategorySpinner"
+        android:layout_marginTop="20dp"
+	   	android:layout_marginRight="30dp"
+	  	 android:layout_marginLeft="35dp"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:text="Is this Person A Repeat Offender?"
+        android:textColor="@color/app_green"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+        	
+        	
+        	<Spinner
+        	         android:id="@+id/culpritRepeatSpinner"
+        	         android:layout_width="match_parent"
+        	         android:layout_height="wrap_content"
+        	         android:layout_marginTop="5dp"
+        	         android:layout_marginRight="30dp"
+	  	 				android:layout_marginLeft="30dp"
+	  	 				android:layout_below="@+id/culpritRepeatLabel"
+        	         android:entries="@array/culprit_repeat_arrays"
+        	         android:prompt="@string/prompt_culprit_repeat"
+        	         android:textColor="@color/app_green"
+        	         android:textColorHint="@color/gray"
+        	         android:spinnerMode="dialog"
+        	         android:textSize="15sp" />
+        	
+	   		
+        	<TextView
+        android:id="@+id/youtubeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/culpritRepeatSpinner"
+        android:layout_marginTop="20dp"
+	   	android:layout_marginRight="30dp"
+	  	 android:layout_marginLeft="35dp"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:text="Evidence Youtube Link"
+        android:textColor="@color/app_green"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+        	
+        	
+        	<EditText
+	        android:id="@+id/youtubeEditText"
+	        
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_below="@+id/youtubeLabel"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	        android:singleLine="true"
+	  		android:textSize="15sp"
+	  		android:textColor="@color/app_green"
+	  		android:textColorHint="@color/gray"
+	  		android:inputType="textUri"
+	        android:hint="http://www.youtube.com/.." >
+	   		</EditText>
+	   		
+        	<TextView
+        android:id="@+id/culpritDetailslabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/youtubeEditText"
+        android:layout_marginTop="20dp"
+	   	android:layout_marginRight="30dp"
+	  	 android:layout_marginLeft="35dp"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:text="Description"
+        android:textColor="@color/app_green"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+        	
+        	
+        	<EditText
+	        android:id="@+id/culpritDetailEditText"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        
+	        android:layout_below="@+id/culpritDetailslabel"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	        android:textSize="15sp"
+	  		android:textColor="@color/app_green"
+	  		android:textColorHint="@color/gray"
+	  		android:inputType="textMultiLine"
+	  		android:gravity="top"
+			    android:maxLength="500"
+	        android:hint="Type more details about the culprit here..." >
+	   		</EditText>
+	    
+        	
+        	
+        	<TextView
+        android:id="@+id/culpritLocationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/culpritDetailEditText"
+        android:layout_marginTop="20dp"
+	   	android:layout_marginRight="30dp"
+	  	 android:layout_marginLeft="35dp"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:text="Address"
+        android:textColor="@color/app_green"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+        	
+        	
+        	<EditText
+	        android:id="@+id/culpritAddressEditText"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/culpritLocationLabel"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	        
+	  		android:textSize="15sp"
+	  		android:textColor="@color/app_green"
+	  		android:textColorHint="@color/gray"
+	  		android:inputType="textMultiLine"
+	  		android:gravity="top"
+			    android:maxLength="500"
+	        android:hint="Address / Location" >
+	   		</EditText>
+	   		
+        	
+        	
+	   	 	
+        	<Button
+	        android:id="@+id/submitCulpritButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_marginTop="30dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_below="@+id/culpritAddressEditText"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/solidbutton"
+	        android:text="Submit"
+	        android:textSize="15sp"
+	        android:textColor="@android:color/white"
+	        />
+        
+        	
+        	    
+		   
+        	
+        	
+    </RelativeLayout>
+    
+    </ScrollView>

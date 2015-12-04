@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="@android:color/white">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+    android:background="@android:color/transparent">
+    
+    <ImageButton
+	        android:id="@+id/buttonReport"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:scaleType="matrix"
+	        android:text="Tentang MBM" 
+	        android:textSize="14sp"
+	        android:textColor="@color/app_green"
+	        android:layout_weight="0.5"
+	        android:background="@drawable/circle_icon"
+	        android:drawablePadding="10dp"
+	        />
+    
+    <ImageButton
+	        android:id="@+id/buttonReportList"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:scaleType="matrix"
+	        android:text="Direktori " 
+	        android:textSize="14sp"
+	        android:textColor="@color/app_green"
+	        android:layout_weight="0.5"
+	        android:background="@drawable/circle_icon"
+	        android:drawablePadding="10dp"
+	        />
+    </LinearLayout>
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+    android:background="@android:color/transparent">
+    
+        <Button
+	        android:id="@+id/btnBroadcast"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:background="@android:color/transparent"
+	        android:text="Pengumuman" 
+	        android:textSize="14sp"
+	        android:textColor="@color/app_green"
+	        android:layout_weight="0.5"
+	        android:drawableTop="@drawable/circle_icon"
+	        android:drawablePadding="10dp"
+	        />
+    
+    
+     <Button
+	        android:id="@+id/btnSahabatRegister"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:background="@android:color/transparent"
+	        android:text="Sahabat MBM" 
+	        android:textSize="14sp"
+	        android:textColor="@color/app_green"
+	        android:layout_weight="0.5"
+	        android:drawableTop="@drawable/circle_icon"
+	        android:drawablePadding="10dp"
+	        />
+     
+    </LinearLayout>
+        
+    
+     <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+    
+    android:paddingBottom="20dp"
+    android:background="@android:color/transparent">
+     
+      <Button
+	        android:id="@+id/btnReport"
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:background="@android:color/transparent"
+	        android:text="Laporan" 
+	        android:textSize="14sp"
+	        android:textColor="@color/app_green"
+	        android:layout_weight="0.5"
+	        android:drawableTop="@drawable/circle_icon"
+	        android:drawablePadding="10dp"
+	        />
+    
+      <Button
+	        android:id="@+id/btnPoint"
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:background="@android:color/transparent"
+	        android:text="Mata Ganjaran" 
+	        android:textSize="14sp"
+	        android:textColor="@color/app_green"
+	        android:layout_weight="0.5"
+	        android:drawableTop="@drawable/circle_icon"
+	        android:drawablePadding="10dp"
+	        />
+      </LinearLayout>
+      
+    
+    
+</LinearLayout>
+
+</ScrollView>

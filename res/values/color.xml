@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!--   629138 #558B2F-->
+    <color name="app_green">#80b735</color>
+    <color name="app_background_green">#99cc67</color>
+    <color name="app_feed_background">#e5e3e3</color>
+    <color name="half_app_green">#50629138</color>
+    <color name="bluehalf">#801376a7</color>
+    
+    <color name="app_dark_gray_color">#838383</color>
+    <color name="app_light_gray_color">#50838383</color>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="departmentColor">#00BCD4</color>
+    
+    
+   <color name="red">#E38469</color>
+   <color name="half_red">#50E38469</color>
+   <color name="progressblue">#75D2FB</color> 
+    
+    <color name="app_feed_footer_bg_color">#f8f8f8</color>
+    <color name="app_feed_footer_font_color">#838383</color>
+    <color name="app_feed_footer_active_font_color">@color/app_green</color>
+    
+    <color name="app_progress_color">#00ae9f</color>
+    <color name="app_progress_icon_color">#00898e</color>
+    <color name="app_progress_background_color">#a1a1a3</color>
+ 
+    
+    <color name="gray">#b7b7b7</color>
+    <color name="lightGray">#f5f5f5</color>
+    <color name="halfLightGray">#50f5f5f5</color>
+    
+    <color name="dark_font">#616161</color>
+    <color name="half_dark_font">#50616161</color>
+    
+</resources>

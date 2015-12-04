@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:background="@drawable/container_dropshadow">
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   
+    >
+    
+    
+        <RelativeLayout 
+	android:id="@+id/feedHeaderView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@color/app_background_green"
+    
+    >
+    
+    <TextView
+        android:id="@+id/councillorValueLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:ellipsize="end"
+        android:gravity="center"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Councillor Details"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    </RelativeLayout>
+    
+        <RelativeLayout 
+            android:id="@+id/feedBodyView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_below="@+id/feedHeaderView"
+    >
+    
+            
+    <com.sbs.android.cleanmycity.component.AppImageView
+        android:id="@+id/feedImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/placeholder"
+        />
+    
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedImageView"
+        android:layout_marginTop="10dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Councillor Name"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/nameValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameLabel"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/dark_font"
+        android:textSize="15sp" />
+    
+  <TextView
+        android:id="@+id/zoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameValueLabel"
+        android:layout_marginTop="10dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Zone"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/zoneValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zoneLabel"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/dark_font"
+        android:textSize="15sp" />  
+  
+  
+        
+    <TextView
+        android:id="@+id/contactLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zoneValueLabel"
+        android:layout_marginTop="10dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Contact"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/contactValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactLabel"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/dark_font"
+        android:textSize="15sp" />  
+        
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactValueLabel"
+        android:layout_marginTop="10dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Email"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/emailValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailLabel"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/dark_font"
+        android:textSize="15sp" />  
+		   
+    
+    <TextView
+        android:id="@+id/complaintOverviewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailValueLabel"
+        android:layout_marginTop="15dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Complaints Overview"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <fragment
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          android:layout_below="@+id/complaintOverviewLabel"
+        android:layout_marginTop="5dp"
+          android:name="com.google.android.gms.maps.MapFragment"/>
+        	
+    <TextView
+        android:id="@+id/mapDescriptionValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text="(Blue - In Progress , Green - Resolved , Red - Delayed)"
+        android:textColor="@color/app_green"
+        android:textSize="15sp" />  
+        
+    <Button
+	        android:id="@+id/complaintButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_below="@+id/mapDescriptionValueLabel"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/solidbutton"
+	        android:text="View Latest Complaints"
+	        android:textSize="15sp"
+	        android:textColor="@android:color/white"
+	        />
+    
+    <Button
+	        android:id="@+id/culpritButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_below="@+id/complaintButton"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/solidbutton"
+	        android:text="View Latest Culprit"
+	        android:textSize="15sp"
+	        android:textColor="@android:color/white"
+	        />
+    
+    <Button
+	        android:id="@+id/thinkBoxButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_below="@+id/culpritButton"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/solidbutton"
+	        android:text="View Latest ThinkBox"
+	        android:textSize="15sp"
+	        android:textColor="@android:color/white"
+	        />
+        
+    </RelativeLayout>
+    
+        
+       <TableLayout
+        android:id="@+id/footerTableLayout"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedBodyView"
+        android:background="@color/app_feed_footer_bg_color"
+        android:stretchColumns="0,1" >
+        
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+             >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:layout_column="0" >
+                
+                <ImageView
+                    android:id="@+id/callImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="14dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    android:tint="@color/app_feed_footer_font_color"
+                    android:src="@drawable/ic_action_call" />
+
+                <TextView
+                    android:id="@+id/callLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                     android:gravity="center_vertical"
+                    android:layout_toRightOf="@id/callImageView"
+                    android:text="Call"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/comment_color_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+
+                android:layout_column="1" >
+
+                 <ImageView
+                    android:id="@+id/emailImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="14dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    android:tint="@color/app_feed_footer_font_color"
+                    android:src="@drawable/ic_action_email" />
+
+                <TextView
+                    android:id="@+id/emailActionLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                     android:gravity="center_vertical"
+                    android:layout_toRightOf="@id/emailImageView"
+                    android:text="Email"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/comment_color_selector" />
+            </RelativeLayout>
+            
+        </TableRow>
+    </TableLayout>
+    
+    </RelativeLayout>
+    </ScrollView>

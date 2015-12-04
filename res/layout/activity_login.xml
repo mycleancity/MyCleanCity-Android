@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true">
+    
+    <com.sbs.android.cleanmycity.component.AppImageView
+	        android:id="@+id/loginLogo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop ="30dp"
+	        android:layout_marginRight="50dp"
+	        android:layout_marginLeft="50dp"
+	        android:adjustViewBounds="true"
+	        android:scaleType="fitStart"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/ic_myclean_logo" />
+    
+   
+        
+    <EditText
+	        android:id="@+id/emailEditText"
+	        android:drawableLeft="@drawable/email"
+	        android:drawablePadding="5dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_below="@+id/loginLogo"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	        android:singleLine="true"
+	  		android:textSize="15sp"
+	  		android:textColor="@color/app_green"
+	  		android:textColorHint="@color/gray"
+	  		
+	  		android:inputType="textEmailAddress"
+	        android:hint="Email Address" >
+	   		</EditText>
+	   		
+            
+        	<EditText
+	        android:id="@+id/passwordEditText"
+	        android:drawableLeft="@drawable/password"
+	        android:drawablePadding="5dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_below="@+id/emailEditText"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	        android:singleLine="true"
+	  		android:textSize="15sp"
+	  		android:textColor="@color/app_green"
+	  		android:textColorHint="@color/gray"
+	  		
+	  		android:password="true"
+	        android:hint="Password" >
+	   	 	</EditText>
+	    
+        	<Button
+	        android:id="@+id/loginButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_marginTop="30dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_below="@+id/passwordEditText"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/solidbutton"
+	        android:text="Login" 
+	        android:textSize="15sp"
+	        android:textColor="@android:color/white"
+	        />
+        
+        	  
+        	    
+        	    <TextView
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+       	android:layout_height="50dp"
+          android:layout_marginBottom="15dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:background="@android:color/transparent"
+	        android:text="No account yet? Click here to Sign Up" 
+	        android:textSize="15sp"
+	        android:textColor="@android:color/black"
+	        android:gravity="center"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        
+        />
+		   
+        	
+        	
+    </RelativeLayout>
+    
+    </RelativeLayout>

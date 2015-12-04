@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyCleanCity</string>
+    <string name="prompt_category"></string>
+    <string name="prompt_culprit"></string>
+    <string name="prompt_culprit_repeat"></string>
+    
+    <string name="production_map_key"></string>
+    <string name="debug_map_key"></string>
+
+    
+    <string-array name="complaint_category_arrays">
+        <item>Bulk Garbage</item>
+        <item>Domestic Garbage</item>
+        <item>Drain Garbage</item>
+        <item>Road Bump</item>
+        <item>Sinkhole [Not Obstructing]</item>
+        <item>Sinkhole [Obstructing Others]</item>
+        <item>Pot Hole</item>
+        <item>Construction Garbage</item>
+        <item>Dirty Road</item>
+        <item>Contractor Garbage</item>
+        <item>Garden Garbage</item>
+        <item>Fallen Tree [Not Obstructing]</item>
+        <item>Fallen Tree [Obstructing Others]</item>
+        
+        
+    </string-array>
+    
+    
+    <string-array name="culprit_category_arrays">
+        <item>Loan Shark Advertisement</item>
+        <item>Illegal Dumping</item>
+        <item>Dirty Back Lanes</item>
+        
+    </string-array>
+    
+    <string-array name="culprit_repeat_arrays">
+        <item>This is my first report against this culprit.</item>
+        <item>I have reported against this culprit before.</item>
+    </string-array>
+    
+    <string-array name="thinkbox_category_arrays">
+        <item>General</item>
+    </string-array>
+    
+    <string-array name="feasibility_arrays">
+        <item>Can be implemented immediately</item>
+        <item>Can be implemented within 1 to 2 Years</item>
+        <item>Requires more than 3 Years</item>
+    </string-array>
+    
+    <string-array name="zone_arrays">
+        <item>General</item>
+    </string-array>
+    
+     <array name="progresscolors">
+        <item>@color/app_green</item>
+    </array>
+   
+</resources>

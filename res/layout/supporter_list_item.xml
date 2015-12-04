@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/container_dropshadow">
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:padding="6dp"
+    android:background="@android:color/transparent">
+
+     <TextView
+        android:id="@+id/userLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+        
+        <com.sbs.android.cleanmycity.component.AppImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/timeImage"
+        android:src="@drawable/time_icon"
+        android:layout_below="@+id/userLabel"
+        android:scaleType="centerCrop"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center_vertical"
+        android:tint="@color/gray"
+        />
+        
+        <TextView
+        android:id="@+id/timeLabel"
+        android:layout_below="@+id/userLabel"
+        android:layout_toRightOf="@+id/timeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/gray" />
+        
+        
+  
+    	 </RelativeLayout>
+    	
+    
+ </RelativeLayout>

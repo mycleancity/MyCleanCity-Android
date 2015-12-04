@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/container_dropshadow"
+    android:minHeight="150dp" >
+
+    <RelativeLayout
+        android:id="@+id/feedHeaderView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_background_green"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/departmentLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:scrollHorizontally="false"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/feedBodyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedHeaderView"
+        android:background="@android:color/white"
+        android:minHeight="110dp"
+        android:padding="8dp" >
+
+        <com.sbs.android.cleanmycity.component.AppImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/departmentImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/departmentHeadLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/departmentImage"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:text="Department Head"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/departmentHeadValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/departmentHeadLabel"
+            android:layout_toRightOf="@+id/departmentImage"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:id="@+id/feedStatusView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/departmentImage"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/status_grey_background" >
+
+            <RelativeLayout
+                android:id="@+id/feedStatusHeaderView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_light_gray_color"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/statusLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="Complaints Status"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/feedStatusBodyView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feedStatusHeaderView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/white"
+                android:paddingBottom="15dp" >
+
+                <TextView
+                    android:id="@+id/receivedValueLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="Total Received : 0"
+                    android:textColor="@color/app_dark_gray_color"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+                
+                <TextView
+                    android:id="@+id/resolvedValueLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/receivedValueLabel"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="Total Resolved : 0"
+                    android:textColor="@color/app_dark_gray_color"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/progressValueLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/resolvedValueLabel"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="In Progress : 0"
+                    android:textColor="@color/app_dark_gray_color"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+                
+                <TextView
+                    android:id="@+id/delayedValueLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progressValueLabel"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="Delayed : 0%"
+                    android:textColor="@color/red"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+               
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

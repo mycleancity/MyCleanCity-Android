@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/container_dropshadow"
+    android:minHeight="150dp" >
+
+    <RelativeLayout
+            android:id="@+id/feedStatusView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:background="@drawable/status_background" >
+
+            <RelativeLayout
+                android:id="@+id/feedStatusHeaderView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_background_green"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/statusLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:gravity="center"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="Complaints Status"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/feedStatusBodyView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feedStatusHeaderView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/white"
+                android:paddingBottom="15dp" >
+
+                <TextView
+                    android:id="@+id/receivedValueLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="Total Received : 0"
+                    android:textColor="@color/app_dark_gray_color"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+                
+                <TextView
+                    android:id="@+id/resolvedValueLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/receivedValueLabel"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="Total Resolved : 0"
+                    android:textColor="@color/app_dark_gray_color"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/progressValueLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/resolvedValueLabel"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="In Progress : 0"
+                    android:textColor="@color/app_dark_gray_color"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+                
+                <TextView
+                    android:id="@+id/delayedValueLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progressValueLabel"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="none"
+                    android:gravity="center_vertical"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"
+                    android:text="Delayed : 0%"
+                    android:textColor="@color/red"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+               
+            </RelativeLayout>
+
+            </RelativeLayout>
+    
+
+</RelativeLayout>

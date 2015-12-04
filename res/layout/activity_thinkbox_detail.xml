@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:background="@drawable/container_dropshadow">
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   
+    >
+    
+    
+        <RelativeLayout 
+	android:id="@+id/feedHeaderView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@color/app_background_green"
+    
+    >
+    
+    <TextView
+        android:id="@+id/categoryValueLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:ellipsize="end"
+        android:gravity="center"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="ThinkBox Details"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    </RelativeLayout>
+    
+        <RelativeLayout 
+            android:id="@+id/feedBodyView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_below="@+id/feedHeaderView"
+    >
+    
+            
+    <com.sbs.android.cleanmycity.component.AppImageView
+        android:id="@+id/feedImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/placeholder"
+        />
+    
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedImageView"
+        android:layout_marginTop="10dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Title"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/titleValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLabel"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/dark_font"
+        android:textSize="15sp" />
+    
+  <TextView
+        android:id="@+id/descLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleValueLabel"
+        android:layout_marginTop="10dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Details"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/descValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descLabel"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/dark_font"
+        android:textSize="15sp" />  
+  
+  
+        
+    <TextView
+        android:id="@+id/feasibilityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descValueLabel"
+        android:layout_marginTop="10dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Feasibility"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/feasibilityValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feasibilityLabel"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/dark_font"
+        android:textSize="15sp" />  
+		   
+    <TextView
+        android:id="@+id/zoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feasibilityValueLabel"
+        android:layout_marginTop="10dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Zone"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/zoneValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zoneLabel"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/dark_font"
+        android:textSize="15sp" />  
+   
+        	
+    
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zoneValueLabel"
+        android:layout_marginTop="10dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Submitted By"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/nameValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameLabel"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/dark_font"
+        android:textSize="15sp" />  
+        
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameValueLabel"
+        android:layout_marginTop="10dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Submitted On"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    
+    <TextView
+        android:id="@+id/dateValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateLabel"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/dark_font"
+        android:textSize="15sp"
+        
+         />  
+         
+    <TextView
+        android:id="@+id/preApproveStatusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateValueLabel"
+        android:layout_marginTop="10dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Status"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    
+    <TextView
+        android:id="@+id/preApproveStatusValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preApproveStatusLabel"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/dark_font"
+        android:textSize="15sp"
+        
+         />  
+        
+        
+    <RelativeLayout 
+	android:id="@+id/feedStatusView"
+	android:layout_below="@+id/preApproveStatusValue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="10dp"
+    
+    android:background="@drawable/status_background"
+    
+    >
+    
+        
+    <RelativeLayout 
+	android:id="@+id/feedStatusHeaderView"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@color/app_background_green"
+    
+    >
+    
+    <TextView
+        android:id="@+id/statusLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:ellipsize="none"
+        android:gravity="center"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="Status"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+	android:id="@+id/feedStatusBodyView"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:paddingBottom="15dp"
+    android:layout_below="@+id/feedStatusHeaderView"
+    android:background="@android:color/white"
+    >
+    
+    <TextView
+        android:id="@+id/statusValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="10dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="TOTAL SIGNATURE: 0"
+        android:textColor="@color/app_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/progressLabel"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/statusValueLabel"
+        app:backgroundPadding="2dp"
+        app:backgroundRadius="4dp"
+        app:backgroundColor="@color/app_progress_background_color"
+        app:progressColor="@color/progressblue"
+        app:progress="0"
+        app:max="1" />
+        	
+    
+    <TextView
+        android:id="@+id/supporterValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressLabel"
+        android:layout_marginTop="5dp"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        android:text="SIGNATURE REQUIRED: 0"
+        android:textColor="@color/half_dark_font"
+        android:textStyle="italic"
+        android:textSize="15sp" 
+        />  
+        
+    <Button
+	        android:id="@+id/suppoterButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_marginTop="10dp"
+	        
+	        android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_below="@+id/supporterValueLabel"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/solidbutton"
+	        android:text="View Supporters"
+	        android:textSize="15sp"
+	        android:textColor="@android:color/white"
+	        />
+     
+    
+        </RelativeLayout>
+        
+        </RelativeLayout>
+    
+    
+    <!-- Start here -->
+    
+    <RelativeLayout 
+	android:id="@+id/feedSupportView"
+	android:layout_below="@+id/feedStatusView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="15dp"
+    android:background="@drawable/status_background"
+    >
+    
+        
+    <RelativeLayout 
+	android:id="@+id/feedSupportHeaderView"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@color/app_background_green"
+    
+    >
+    
+    <TextView
+        android:id="@+id/supportLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:ellipsize="none"
+        android:gravity="center"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:text="SUPPORT THIS IDEA"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+	android:id="@+id/feedSupportBodyView"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:paddingBottom="15dp"
+    android:layout_below="@+id/feedSupportHeaderView"
+    android:background="@android:color/white"
+    >
+    
+        
+    <EditText
+	        android:id="@+id/nameEditText"
+	        android:drawableLeft="@drawable/full_name"
+	        android:drawablePadding="5dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:singleLine="true"
+	  		android:textSize="15sp"
+	  		android:textColor="@color/app_green"
+	  		android:textColorHint="@color/gray"
+	  		android:inputType="textCapWords"
+	        android:hint="Full Name" >
+	   		</EditText>
+	   		
+    	<EditText
+	        android:id="@+id/emailEditText"
+	        android:drawableLeft="@drawable/email"
+	        android:drawablePadding="5dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_below="@+id/nameEditText"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:singleLine="true"
+	  		android:textSize="15sp"
+	  		android:textColor="@color/app_green"
+	  		android:textColorHint="@color/gray"
+	  		android:inputType="textEmailAddress"
+	        android:hint="Email Address" >
+	   		</EditText>
+	   		
+            
+        	<EditText
+	        android:id="@+id/mobileEditText"
+	        android:drawableLeft="@drawable/mobile"
+	        android:drawablePadding="5dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_below="@+id/emailEditText"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:singleLine="true"
+	  		android:textSize="15sp"
+	  		android:textColor="@color/app_green"
+	  		android:textColorHint="@color/gray"
+	  		android:inputType="phone"
+	        android:hint="Mobile Number" >
+	   		</EditText>
+    
+    <Button
+	        android:id="@+id/submitButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_marginTop="10dp"
+	        
+	        android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_below="@+id/mobileEditText"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/solidbutton"
+	        android:text="Support this idea"
+	        android:textSize="15sp"
+	        android:textColor="@android:color/white"
+	        />
+    
+        </RelativeLayout>
+        
+        
+    </RelativeLayout>
+    <!-- End here -->
+    </RelativeLayout>
+    
+        
+        
+   
+        
+        
+        <TableLayout
+        android:id="@+id/footerTableLayout"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedBodyView"
+        android:background="@color/app_feed_footer_bg_color"
+        android:stretchColumns="0,1" >
+        
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+             >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:layout_column="0" >
+                
+                <ImageView
+                    android:id="@+id/commentImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    android:tint="@color/app_feed_footer_font_color"
+                    android:src="@drawable/ic_action_comment" />
+
+                <TextView
+                    android:id="@+id/commentLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                     android:gravity="center_vertical"
+                    android:layout_toRightOf="@id/commentImageView"
+                    android:text="Comment"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/comment_color_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+
+                android:layout_column="1" >
+
+                 <ImageView
+                    android:id="@+id/shareImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    android:tint="@color/app_feed_footer_font_color"
+                    android:src="@drawable/ic_action_share" />
+
+                <TextView
+                    android:id="@+id/shareLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                     android:gravity="center_vertical"
+                    android:layout_toRightOf="@id/shareImageView"
+                    android:text="Share"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/comment_color_selector" />
+            </RelativeLayout>
+            
+        </TableRow>
+    </TableLayout>
+    
+    </RelativeLayout>
+    </ScrollView>
